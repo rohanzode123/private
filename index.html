@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="open.css" />
+    <script>
+      function openUp() {
+        const $opentop = document.querySelector("#opentop");
+        const $top = document.querySelector("#top");
+        const $front = document.querySelector("#front");
+        const $back = document.querySelector("#back");
+        const $letter = document.querySelector("#letter");
+        const $button = document.querySelector("button");
+
+        $opentop.beginElement();
+        $top.style.zIndex = 2;
+
+        $top.classList.add("animate");
+        $front.classList.add("animate");
+        $back.classList.add("animate");
+        $button.classList.add("animate");
+        $letter.classList.add("animate");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="text">
+      <h1>Hey ! Listen this is for you 💖....</h1>
+    </div>
+    <div id="envelope">
+      <div id="back">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 300,100 300,300 0,300"
+            style="fill: #4a274a; stroke: none; stroke-width: 0"
+          />
+        </svg>
+      </div>
+      <div id="front">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100 300,300 0,300"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 3"
+          />
+        </svg>
+      </div>
+      <div id="top">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          height="300"
+          width="300"
+        >
+          <polygon
+            points="0,100 150,200 300,100"
+            style="fill: #2abad0; stroke: #ffffff; stroke-width: 2"
+          >
+            <animate
+              id="opentop"
+              attributeName="points"
+              dur="0.5s"
+              fill="freeze"
+              begin="indefinite"
+              from="0,100 150,200 300,100"
+              to="0,100 150,0 300,100"
+            />
+          </polygon>
+        </svg>
+      </div>
+
+      <div id="letter">
+        <h1>For My <span>Love</span></h1>
+
+        <!-- <img src="https://i.postimg.cc/5yZQnDpb/ukraine-7424066-640.webp" />-->
+        <p>
+          Hii Disha, kashi ahes, khup try kel tuzya sathi letter lihaych but same like you, it's
+          even not my cup of tea. So, after 3 year or i think more, apla bond kiti strong hot ala ahe
+          ani tyathi apan doghani khup ups and downs baghitle ahet,anhi ya 3 years madhe khup kahi zal family mdhe
+          and tu tyana kiti care ne handle kel tevha tuzi pn swata kade pn thod laksh det ja re.
+          Disha js tula tuzi aai priy hoti ts tu mla ahes, and i will never ever let you go anywhere my baccha.
+          Ts tr khup kahi ahe bolaysathi te ya letter madhe express nhi krus shklo.
+          So, last big hugggggggg(tight one)for now. <br />
+         
+         <br>
+         Tuzya sathi mi ayushbhar asnar, so would you like to be with me for lifetime<br />
+          If You Accept
+          <a href="new.html">Click Here</a>
+        </p>
+      </div>
+      <button onclick="openUp()">Click Here</button>
+    </div>
+  </body>
+</html>
